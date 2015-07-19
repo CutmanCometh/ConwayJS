@@ -1,0 +1,5 @@
+var Conway = (function(){
+
+
+	return {};
+})();

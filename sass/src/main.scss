@@ -1,0 +1,50 @@
+html, body, .container{
+	height : 100%;
+}
+
+body{
+	background-color: $bg-universal;
+	color : $text-color;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	background-color: $bg-container;
+}
+
+h1{
+	font-size : 3em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+canvas{
+	background-color : $bg-canvas;
+	height : 800px;
+	width : 800px;
+	margin : 0 auto;
+	display : block;
+}
+
+label[for=framerate-slider]{
+	display : block;
+	width : 800px;
+	font-size : 1.5em;
+	font-weight: 500;
+	margin : 0 auto;
+	text-align : center;
+}
+
+input.framerate-slider{
+	width : 800px;
+	display: block;
+	margin : 0 auto;
+}
+
+input.play-pause{
+	display : block;
+	width : 800px;
+	margin : 0 auto;
+	height : 70px;
+}
