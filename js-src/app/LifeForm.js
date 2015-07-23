@@ -7,8 +7,8 @@ function LifeForm(){
 }
 
 LifeForm.prototype.kill = function(){
-	this.isAlive = false;
-	this.timeOfDeath = Date.now();
+	if(this.isAlive & !(this.isAlive = false))
+		this.timeOfDeath = Date.now();//TODO refactor LifeForm.kill() and LifeForm.evolve() to eliminate nearly identical code
 };
 
 LifeForm.prototype.resuscitate = function(){
@@ -20,7 +20,9 @@ LifeForm.prototype.addLivingNeighbor = function(){
 };
 
 LifeForm.prototype.evolve = function(){
-	this.isAlive = this.isAliveNextGen;
+	if(this.isAlive & !(this.isAlive = this.isAliveNextGen)){//NOT accidental assignment! using the return value of the assignment to decide ifornot to assign a new kill time
+		this.timeOfDeath = Date.now();
+	}
 };
 
 LifeForm.prototype.resetNeighborCount = function(){

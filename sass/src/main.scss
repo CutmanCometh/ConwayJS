@@ -27,7 +27,7 @@ canvas{
 	display : block;
 }
 
-label[for=framerate-slider]{
+label[for=iteration-slider]{
 	display : block;
 	width : 800px;
 	font-size : 1.5em;
@@ -36,7 +36,7 @@ label[for=framerate-slider]{
 	text-align : center;
 }
 
-input.framerate-slider{
+input.iteration-slider{
 	width : 800px;
 	display: block;
 	margin : 0 auto;
@@ -47,4 +47,8 @@ input.play-pause{
 	width : 800px;
 	margin : 0 auto;
 	height : 70px;
+}
+
+h1, canvas#canvas, label.iteration-label, input.iteration-slider{
+	margin-bottom: 25px;
 }
